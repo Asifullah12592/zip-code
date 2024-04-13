@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipCode</title>
+</head>
+
+<body>
+    <h1>Copy the name whose number you want</h1>
+    <ul>
+        <li>Sadiqullah</li>
+        <li>Saleemullah</li>
+        <li>Asifullah</li>
+        <li>Ameerullah</li>
+        <li>Ameer Nawab</li>
+        <li>Ashiq Nawab</li>
+    </ul>
+    <form>
+        Name  :
+        <input type="text" id="name" onblur="foo()" placeholder="Select The Name">
+        <br>
+        <br>
+        Numb :
+        <input type="text" id="number">
+    </form>
+
+
+    <script>
+
+        function foo(){
+            var selectNumber ;
+            
+            var selectName = document.getElementById("name").value;
+            switch (selectName){
+                case "Sadiqullah":
+                    selectNumber = '03332051502';
+                    break;
+                case "Saleemullah": 
+                selectNumber = '03400803337';
+                    break;
+                case "Asifullah": 
+                selectNumber = '03422703531';
+                    break;
+                case "Ameerullah":
+                     selectNumber = '03491820025';
+                    break;
+                case "Ameer Nawab": 
+                selectNumber = '03400250425'
+                case "Ameer Nawab": 
+                selectNumber = '03409188700'
+
+
+            }
+           
+            document.getElementById('number').value = selectNumber
+        }
+        
+           
+            
+    </script>
+</body>
+
+</html>

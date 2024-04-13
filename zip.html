@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipCode</title>
+</head>
+
+<body>
+    <h1>ZipCode</h1>
+    <p> ZipCode : (1,2,3,4,5)</p>
+    <form>
+        Zip  :
+        <input type="text" id="zip" onchange="foo()">
+        <br>
+        <br>
+        City:
+        <input type="text" id="city">
+    </form>
+
+
+    <script>
+
+        function foo(){
+            var cityName ;
+            
+            var zipCode = document.getElementById("zip").value;
+            switch (zipCode){
+                case "1":
+                    cityName = 'Karachi';
+                    break;
+                case "2": 
+                cityName = 'Khuzdar';
+                    break;
+                case "3": 
+                cityName = 'Islamabad';
+                    break;
+                case "4":
+                     cityName = 'Pishawar';
+                    break;
+                case "5": 
+                cityName = 'Lahore'
+
+
+            }
+           
+            document.getElementById('city').value = cityName
+        }
+        
+           
+            
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See More</title>
+</head>
+
+<body>
+    <h1>See More project</h1>
+    <span id="pera"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam recusandae? Rem tenetur
+        consectetur.  </span>
+        <span id="btn" onclick="sub()" style="color: blue;">See More...</span>
+    
+
+    <script>
+        var lessText = ""
+        function sub() {
+            var text = document.getElementById("pera")
+            
+            var fullText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, nam recusandae? Rem tenetur consectetur. Laborum voluptates architecto illo, facre molestias." 
+            // console.log(text)
+            var btn = document.getElementById("btn")
+            
+            if (lessText){
+                text.innerHTML = lessText
+                btn.innerHTML = "See More..."
+                lessText =""
+            }
+            else {
+                lessText = text.innerHTML;
+                text.innerHTML = fullText
+                btn.innerHTML = "See less"
+            }
+            
+
+        }
+
+    </script>
+</body>
+
+</html>
